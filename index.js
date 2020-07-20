@@ -65,29 +65,17 @@ function promptUser() {
             message: "Please enter your email"
 
         }
-        ,
-        {
-            type: "confirm",
-            name: "confirm",
-            message: "Is the above correct?"
-        }
+
     ])
-
-        //
-
-        .then(function (response) {
-
-            if (response.confirm === yes) {
-                console.log("Success");
-            }
-        })
 
 }
 
-// Generate a table of contents within the markdown file
-generateREADME = (answers) => {
-    return
-    `${answers.ProjectName}
+
+const answers =
+
+    generateREADME = (answers) => {
+        return
+        `${answers.ProjectName}
 Licence: ${answers.licence}
 
 Table of contents:
@@ -122,17 +110,16 @@ Github username: ${answers.GithubUsername}
 If you have any questions about this application, please email me at ${answers.Email}
 
 `
-}
+    }
 
-// add an axio function to get the logo for the licence and append to the file
+// add an axio function to get the logo for the licence and append to the file?
 
 async function init() {
     console.log("Hi")
     try {
         const answers = await promptUser();
-        const README = generateREADME(answers)
-        // change file name to be input created from input to project name prompt
-        // await writeFileAsync("README.md", md);
+        const README = generateREADME(answers);
+
         await writeFileAsync("README.md", README);
         console.log("Successfully wrote a README file");
 
