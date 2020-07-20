@@ -39,3 +39,5 @@ npm test
 Github profile: https://github.com/Nikki-Rees
 
 If you have any questions about this application, please email me at nikki-rees@outlook.com
+
+Please see screenshot: (Screen Shot 2020-07-20 at 5.32.08 pm.png)
