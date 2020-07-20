@@ -54,28 +54,27 @@ function promptUser() {
         {
             type: "input",
             name: "GithubUsername",
-            message: "Please enter your GitHub username?",
-            message: "Please enter your email"
-
+            message: "Please enter your Github username?"
         }
         ,
         {
             type: "input",
             name: "Email",
             message: "Please enter your email"
-
         }
 
     ])
-
+        .then(answers => {
+            console.info('Answers:', answers);
+        });
 }
 
 
-const answers =
+//const answers =
 
-    generateREADME = (answers) => {
-        return
-        `${answers.ProjectName}
+generateREADME = (answers) => {
+    return
+    `${answers.ProjectName}
 Licence: ${answers.licence}
 
 Table of contents:
@@ -110,7 +109,7 @@ Github username: ${answers.GithubUsername}
 If you have any questions about this application, please email me at ${answers.Email}
 
 `
-    }
+}
 
 // add an axio function to get the logo for the licence and append to the file?
 
