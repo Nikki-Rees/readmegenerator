@@ -2,11 +2,9 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
-
 const writeFileAsync = util.promisify(fs.writeFile);
 
-
-//Prompt user for for answers
+//Prompt user for answers
 function promptUser() {
     return inquirer.prompt([
         {
@@ -76,14 +74,13 @@ function promptUser() {
     ])
 }
 
-
-//const answers =
+// generate the markdown boilerplate code that includes the answers to the prompt promise
 
 function generateREADME(answers) {
-    return `##${answers.title}
-###Licence:  ![License](https://img.shields.io/badge/License-${answers.licence}.svg)(https://opensource.org/licenses/${answers.licence})
+    return `## ${answers.title}
+### Licence:  ![License](https://img.shields.io/badge/License-${answers.licence}.svg)(https://opensource.org/licenses/${answers.licence})
 
-###Table of contents:
+### Table of contents:
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
@@ -112,10 +109,12 @@ ${answers.test}
 
 # 7 Questions 
 Github profile: https://github.com/${answers.githubusername}
+
 If you have any questions about this application, please email me at ${answers.email}
 `
 }
 
+//create function to call prompt and generate functions using 'await'
 async function init() {
     console.log("Hi");
     try {
@@ -128,7 +127,8 @@ async function init() {
     } catch {
         console.log(err);
     }
-    //Chaining practice - preference for using Awaits
+
+    //Chaining functions practice - preference for using Awaits
     // const answers = promptUser().then(answers => {
     //     console.log(answers);
     //     const README = generateREADME(answers);
@@ -140,4 +140,5 @@ async function init() {
     // })
 }
 
+// call init function
 init();
