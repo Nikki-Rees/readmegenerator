@@ -12,56 +12,65 @@ function promptUser() {
         {
             type: "input",
             name: "title",
-            message: "Please enter your project name"
+            message: "Please enter your project name",
+            default: "No information provided"
         }
         ,
         {
             type: "input",
             name: "description",
-            message: "Please enter a description for this project"
+            message: "Please enter a description for this project",
+            default: "No information provided"
         }
         ,
         {
             type: "input",
             name: "installation",
-            message: "Please enter installation information for this project"
+            message: "Please enter installation information for this project",
+            default: "No information provided"
         }
         ,
         {
             type: "input",
             name: "usage",
-            message: "Please enter usage information for this project"
+            message: "Please enter usage information for this project",
+            default: "No information provided"
         }
         ,
         {
             type: "input",
             name: "licence",
-            message: "Please enter Licence information for this project"
+            message: "Please enter Licence information for this project",
+            default: "No information provided"
         }
         ,
         {
             type: "input",
             name: "contributing",
-            message: "Please enter contribution information for this project"
+            message: "Please enter contribution information for this project",
+            default: "No information provided"
         }
         ,
         {
             type: "input",
             name: "test",
-            message: "Please enter test information for this project"
+            message: "Please enter test information for this project",
+            default: "No information provided"
         }
         ,
         // check how to ask two questions withint he same input name?
         {
             type: "input",
             name: "githubusername",
-            message: "Please enter your Github username"
+            message: "Please enter your Github username",
+            default: "No information provided"
         }
         ,
         {
             type: "input",
             name: "email",
-            message: "Please enter your email"
+            message: "Please enter your email",
+            default: "No information provided"
         }
 
     ])
@@ -71,24 +80,17 @@ function promptUser() {
 //const answers =
 
 function generateREADME(answers) {
-    return `Title:${answers.title}
-Licence: ${answers.licence} ![alt text](http://url/to/img.png)
+    return `##${answers.title}
+###Licence:  ![License](https://img.shields.io/badge/License-${answers.licence}.svg)(https://opensource.org/licenses/${answers.licence})
 
-#Table of contents:
-
- * 1[Description](#1 Description)
-
-  * 2[Installation](#2 Installation)
-
-   * 3[Usage](#3 Usage)
-
-    * 4[Licence](#4 Licence)
-
-   * 5[Contributing](#5 Contributing)
-
-    * 6[Test](#6 Test)
-
-    * 7[Questions](#7 Questions)
+###Table of contents:
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Licence](#licence)
+* [Contributing](#contributing)
+* [Test](#test)
+* [Questions](#questions)
 
 # 1 Description
 ${answers.description}
@@ -109,7 +111,7 @@ ${answers.contributing}
 ${answers.test}
 
 # 7 Questions 
-Github username: ${answers.githubusername}
+Github profile: https://github.com/${answers.githubusername}
 If you have any questions about this application, please email me at ${answers.email}
 `
 }
@@ -122,9 +124,11 @@ async function init() {
         const README = generateREADME(answers);
         await writeFileAsync("README.md", README);
         console.log("Success!")
+
     } catch {
         console.log(err);
     }
+    //Chaining practice - preference for using Awaits
     // const answers = promptUser().then(answers => {
     //     console.log(answers);
     //     const README = generateREADME(answers);

@@ -1,40 +1,33 @@
-Title:t
-Licence: t ![alt text](http://url/to/img.png)
+##README Generater
+###Licence:  ![License](https://img.shields.io/badge/License-ICS.svg)(https://opensource.org/licenses/ICS)
 
-#Table of contents:
-
- * 1[Description](#1 Description)
-
-  * 2[Installation](#2 Installation)
-
-   * 3[Usage](#3 Usage)
-
-    * 4[Licence](#4 Licence)
-
-   * 5[Contributing](#5 Contributing)
-
-    * 6[Test](#6 Test)
-
-    * 7[Questions](#7 Questions)
+###Table of contents:
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Licence](#licence)
+* [Contributing](#contributing)
+* [Test](#test)
+* [Questions](#questions)
 
 # 1 Description
-t
+This app allows the user to quickly create professional informative README.md files for new projects.  The app prompts the user to answer multiple questions within the command line and then writes the response in a structured markdown file that features a table of contents and licence badge
 
 # 2 Installation
-t
+npm install inquirer, fs, util
 
 # 3 Usage
-t
+No information provided
 
 # 4 Licence
-t
+ICS
 
 # 5 Contributing
-t
+Nikki Rees
 
 # 6 Test
-t
+npm test
 
 # 7 Questions 
-Github username: t
-If you have any questions about this application, please email me at t
+Github profile: https://github.com/Nikki-Rees
+If you have any questions about this application, please email me at nikki-rees@outlook.com
