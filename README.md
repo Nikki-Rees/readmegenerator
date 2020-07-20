@@ -1,41 +1,41 @@
-## t
-![Licence](https://img.shields.io/badge/License-t.svg)(https://opensource.org/licenses/t)
+## README Generator
+![Licence](https://img.shields.io/badge/License-ISC.svg)(https://opensource.org/licenses/ISC)
 
 ### Table of contents:
-*[Description](#description)
-*[Installation](#installation)
-*[Usage](#usage)
-*[Licence](#licence)
-*[Contributing](#contributing)
-*[Test](#test)
-*[Questions](#questions)
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Licence](#licence)
+* [Contributing](#contributing)
+* [Test](#test)
+* [Questions](#questions)
 
 # Description
 
-t
+This application is built to enable the user to quickly create a professional and structure README.md that can be uploaded to the repository for any new project. Leaving more time for development and learning!
 
 # Installation
 
-t
+install inquirer, fs and util
 
 # Usage
 
-tt
+for use with any new project
 
 # Licence
 
-t
+ISC
 
 # Contributing
 
-t
+nikki rees
 
 # Test
 
-t
+npm test
 
 # Questions 
 
-Github profile: https://github.com/t
+Github profile: https://github.com/Nikki-Rees
 
-If you have any questions about this application, please email me at t
+If you have any questions about this application, please email me at nikki-rees@outlook.com
