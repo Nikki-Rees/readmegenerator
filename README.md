@@ -1,34 +1,41 @@
-## README Generater
-### Licence:  ![License](https://img.shields.io/badge/License-ISC.svg)(https://opensource.org/licenses/ISC)
+## t
+![Licence](https://img.shields.io/badge/License-t.svg)(https://opensource.org/licenses/t)
 
 ### Table of contents:
-* [Description](#description)
-* [Installation](#installation)
-* [Usage](#usage)
-* [Licence](#licence)
-* [Contributing](#contributing)
-* [Test](#test)
-* [Questions](#questions)
+*[Description](#description)
+*[Installation](#installation)
+*[Usage](#usage)
+*[Licence](#licence)
+*[Contributing](#contributing)
+*[Test](#test)
+*[Questions](#questions)
 
-# 1 Description
-This application is built to enable the user to quickly create a professional README document for new projects, so more time can be spent developing! This application prompts the user to answer a number of questions that info a markdown file and that can be saved to the repository.
+# Description
 
-# 2 Installation
-npm install inquirer, fs and util before use
+t
 
-# 3 Usage
-Use for any new projects when creating a README file
+# Installation
 
-# 4 Licence
-ISC
+t
 
-# 5 Contributing
-Nikki Rees
+# Usage
 
-# 6 Test
-npm test
+tt
 
-# 7 Questions 
-Github profile: https://github.com/Nikki-Rees
+# Licence
 
-If you have any questions about this application, please email me at nikki-rees@outlook.com
+t
+
+# Contributing
+
+t
+
+# Test
+
+t
+
+# Questions 
+
+Github profile: https://github.com/t
+
+If you have any questions about this application, please email me at t

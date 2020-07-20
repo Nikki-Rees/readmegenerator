@@ -78,7 +78,7 @@ function promptUser() {
 
 function generateREADME(answers) {
     return `## ${answers.title}
-### Licence:  ![License](https://img.shields.io/badge/License-${answers.licence}.svg)(https://opensource.org/licenses/${answers.licence})
+![Licence](https://img.shields.io/badge/License-${answers.licence}.svg)(https://opensource.org/licenses/${answers.licence})
 
 ### Table of contents:
 * [Description](#description)
@@ -89,25 +89,32 @@ function generateREADME(answers) {
 * [Test](#test)
 * [Questions](#questions)
 
-# 1 Description
+# Description
+
 ${answers.description}
 
-# 2 Installation
+# Installation
+
 ${answers.installation}
 
-# 3 Usage
+# Usage
+
 ${answers.usage}
 
-# 4 Licence
+# Licence
+
 ${answers.licence}
 
-# 5 Contributing
+# Contributing
+
 ${answers.contributing}
 
-# 6 Test
+# Test
+
 ${answers.test}
 
-# 7 Questions 
+# Questions 
+
 Github profile: https://github.com/${answers.githubusername}
 
 If you have any questions about this application, please email me at ${answers.email}
