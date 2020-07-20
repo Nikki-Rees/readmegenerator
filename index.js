@@ -74,14 +74,21 @@ function generateREADME(answers) {
     return `Title:${answers.title}
 Licence: ${answers.licence} ![alt text](http://url/to/img.png)
 
-Table of contents:
-    1[Description](#1 Description)
-    2[Installation](#2 Installation)
-    3[Usage](#3 Usage)
-    4[Licence](#4 Licence)
-    5[Contributing](#5 Contributing)
-    6[Test](#6 Test)
-    7[Questions](#7 Questions)
+#Table of contents:
+
+ * 1[Description](#1 Description)
+
+  * 2[Installation](#2 Installation)
+
+   * 3[Usage](#3 Usage)
+
+    * 4[Licence](#4 Licence)
+
+   * 5[Contributing](#5 Contributing)
+
+    * 6[Test](#6 Test)
+
+    * 7[Questions](#7 Questions)
 
 # 1 Description
 ${answers.description}
